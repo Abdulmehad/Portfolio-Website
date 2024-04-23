@@ -12,13 +12,15 @@
         <div class="container">
             <nav>
                 <img src="images/img.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="headertext">
                 <p>Front-end Developer</p>
@@ -42,7 +44,7 @@
                     <br>
                     <p>Welcome to my personal portfolio website! I'm Abdul Mehad, a passionate front-end web developer based in Lahore, Pakistan. 
                         With a strong background in computer science and a heart for humanitarian service, I strive to create impactful digital experiences. 
-                        Proficient in JavaScript, HTML/CSS, C++, and Java, I specialize in crafting dynamic websites with creative designs and interactive features.
+                        Proficient in React JS, JavaScript, HTML/CSS, C++, and Java, I specialize in crafting dynamic websites with creative designs and interactive features.
                          Let's connect and explore how my skills and dedication can contribute to your projects. </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -54,6 +56,7 @@
                    
                     <ul>
                         <li><span>Web Development</span><br>Desigining Websites both dynamic and static</li>
+                        <li><span>React JS</span><br>Proefficient in the React Library of JavaScript</li>
                         <li><span>Java</span><br>Can proefficiently code in Java</li>
                         <li><span>C++</span><br>Can proefficiently code in C++</li>
                         <li><span>DSA</span><br>Can solve DSA questions</li>
@@ -64,7 +67,7 @@
 
                    
                         <ul>
-                            <li><span>Internship</span><br>Internship at CODE ALPHA</li>
+                            <li><span>Feb 2024-Present</span><br>Internship at My Digital Pixel</li>
 
                         </ul>
     
@@ -73,9 +76,9 @@
 
                    
                             <ul>
-                                <li><span>BSCS</span><br>GCU-Lahore   2022-26 </li>
-                                <li><span>Intermediate</span><br>GICCL   2020-22</li>
-                                <li><span>Matric</span><br>Unique High School  2018-20</li>
+                                <li><span>2022-26</span><br> BSCS  GCU-Lahore</li>
+                                <li><span> 2020-22</span><br>Intermediate  GICCL  </li>
+                                <li><span>2018-20</span><br>Matriculation Unique High School</li>
                                 
                             </ul>
         
@@ -118,38 +121,53 @@
         <h1 class="subtitle2">MY WORK</h1>
         <div class="work-list">
             <div class="work">
+                <img src="images/images6.png" alt="">
+                <div class="layer">
+                    <h3> Background Remover App</h3><br>
+                    <ul>
+                       <li> Innovated a background removal tool through full-cycle involvement, encompassing coding, debugging, and feature integration.</li>
+                       
+                      <br> <li> Enhanced project success by collaborating with diverse developers, fostering effective communication, teamwork, and resolving technical challenges collectively.</li>
+                     
+                       <br><li>Leveraged algorithms and libraries to enhance tool effectiveness by accurately identifying and removing backgrounds from diverse image types.</li> 
+                    </ul><br>
+                        <a href="https://backgroundremoverrr.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
                 <img src="images/images4.jpg" alt="">
                 <div class="layer">
-                    <h3>Stone-Paper-Scissor Game</h3><br>
-                    <p>Developed C++ based Stone-Paper-Scissors game. <br>
-                        <br> Demonstrated algorithmic efficiency without extensive use of OOP. <br>
-                        <br>Highlighted versatility in applying different programming paradigms. </p><br>
-                        <a href="https://github.com/Abdulmehad/Stone-Paper-Scissors-Game"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3> Password Generator App </h3><br>
+                    <ul>
+                        <li>Developed user-friendly Password Generator app using React, JavaScript, and HTML/CSS. </li><br>
+                        <li>Implemented customizable options for password length, character types, and Number inclusion. </li>
+                        <br> 
+                        <li>Implemented error handling and validation checks for preventing invalid inputs and ensuring password strength.
+                            effectiveness and usability.</li>
+                        <br>
+                     </ul><br>
+                        <a href="https://passwordgeneratorrrrrr.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/images5.jpg" alt="">
                 <div class="layer">
-                    <h3>ATM-Machine</h3><br>
-                    <p>Implemented Java-based ATM system using object-oriented programming. <br>
-                        <br>Emphasized modular design and encapsulation principles. <br>
-                        <br>Enabled account management and transaction functionalities. </p>
-                        <br>
-                        <a href="https://github.com/Abdulmehad/ATM-Machine"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <h3>Currency Converter App</h3><br>
+                   <ul>
+                    <li> Built a React.js currency conversion app prioritizing accuracy and stability, reinforced with thorough unit testing for reliable functionality and precise currency calculations, ensuring seamless user experience. </li>
+                       <br>
+                         <li>Integrated a live currency exchange rates API to provide up-to-date conversion rates within the application.   </li><br>
+                        <li> Designed an intuitive user interface with error handling to enhance the user experience and provide informative feedback for invalid inputs or network errors.  </li>
+                    </ul><br>
+                        <a href="https://strong-alfajores-6d0af5.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
-            <div class="work">
-                <img src="images/images6.png" alt="">
-                <div class="layer">
-                    <h3>Personal Website</h3><br>
-                   <p> Crafting dynamic personal website using CSS, HTML, and JS. <br>
-                       <br>Implementing creative design, responsive layouts, and interactive features. <br> 
-                    <br>Showcasing skills, projects, and commitment to web development.</p><br>
-                    <a href="https://github.com/Abdulmehad/Portfolio-Website"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+
             </div>
+            <a href="https://github.com/Abdulmehad?tab=repositories&q=&type=public&language=&sort=" class="btn">See more</a> 
         </div>
-        <a href="https://github.com/Abdulmehad?tab=repositories&q=&type=public&language=&sort=" class="btn">See more</a> 
+      
 
     </div>
     </div>
@@ -220,6 +238,16 @@ document.getElementById(tabname).classList.add("active-tab");
         )
         .catch(error => console.error('Error!', error.message))
     })
+
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
   </script>
 </body>
 </html>

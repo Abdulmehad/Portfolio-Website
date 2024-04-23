@@ -227,8 +227,10 @@ nav ul li a:hover::after{
     transition: height 0.5s;
 }
 .layer h3{
-    font-weight: 500;
+    font-size: 25px;
     margin-bottom: 20px;
+    color: #fff;
+    text-decoration: underline;
 }
 .layer a{
     margin-top: 20px;
@@ -326,9 +328,68 @@ form input, form textarea{
     font-weight: 300;
     margin-top: 20px;
 }
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
+.Copyright i{
+    color: #ff004f;
+}
+/*RESPONSIVE*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
+   .headertext{
+    margin-top: 100%;
+    font-size: 16px;
+   }
+    .headertext h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0%;
+        right: -200px;
+        height: 100vh;
+        width: 200px;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
 
+    }
+    nav ul li{
+        display: block;
+        margin: 26px;
+    }
+    nav .fa-solid{
+        position: absolute;
+        top: 35px;
+        right: 25px;
+        cursor: pointer;
+    }
+    .subtitle{
+        font-size:  40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px ;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .Copyright{
+        font-size: 14px;
+    }
 }
