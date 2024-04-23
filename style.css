@@ -246,6 +246,18 @@ nav ul li a:hover::after{
     text-decoration: none;
 
 }
+.layer::-webkit-scrollbar {
+    width: 6px;
+}
+
+.layer::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.layer::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
 .work:hover img{
     transform: scale(1.1);/*zoom in*/
 }
@@ -396,5 +408,48 @@ nav .fa-solid{
     }
     .layer {
         height: auto; /* adjust this value as needed */
+    }
+    .layer h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+}
+/* For medium screens (tablets) */
+@media only screen and (max-width: 768px) {
+    .headertext {
+        font-size: 20px;
+    }
+    .headertext h1 {
+        font-size: 40px;
+    }
+    .about-col-1 img {
+        width: 80%;
+    }
+    .services-list div {
+        padding: 20px;
+    }
+    .services-list div i {
+        font-size: 30px;
+    }
+    .services-list div h2 {
+        font-size: 24px;
+    }
+    .layer {
+        font-size: 12px;
+    }
+    .layer h3 {
+        font-size: 20px;
+    }
+    .layer a {
+        font-size: 16px;
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    .layer h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        padding-top: 20px;
     }
 }
