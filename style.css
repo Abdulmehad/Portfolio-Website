@@ -226,6 +226,7 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.5s;
     overflow-y:auto;
+    scrollbar-width: none;
 }
 .layer h3{
     font-size: 25px;
@@ -392,5 +393,8 @@ nav .fa-solid{
     }
     .Copyright{
         font-size: 14px;
+    }
+    .layer {
+        height: auto; /* adjust this value as needed */
     }
 }
