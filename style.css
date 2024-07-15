@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
-}
+/* Remove the extra closing curly brace at the end of the code */
 html{
     scroll-behavior:smooth;
 }
@@ -192,9 +192,7 @@ nav ul li a:hover::after{
     padding: 50px 0;
 }
 .work-list{
-    display: grid;
-    grid-column: 3;
-    grid-row: 2;
+    display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     margin-top: 50px;
@@ -203,6 +201,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 .work img{
     width: 100%;
@@ -351,7 +350,72 @@ form input, form textarea{
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width:600px){
+/* For medium screens (tablets) */
+@media only screen and (max-width: 1024px) {
+    .headertext {
+        font-size: 20px;
+    }
+    .headertext h1 {
+        font-size: 40px;
+    }
+    .about-col-1 img {
+        width: 80%;
+    }
+    .services-list div {
+        padding: 20px;
+    }
+    .services-list div i {
+        font-size: 30px;
+    }
+    .services-list div h2 {
+        font-size: 24px;
+    }
+    /* .layer {
+        font-size: 12px;
+    }
+    .layer h3 {
+        font-size: 20px;
+    }
+    .layer a {
+        font-size: 16px;
+    } */
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    /* .layer h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        padding-top: 20px;
+    } */
+    .work-list {
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+        grid-gap: 30px; /* Adjust gap */
+    }
+
+    .work {
+        margin-bottom: 20px; /* Adjust margin */
+    }
+
+    .layer {
+        padding: 0 30px; /* Adjust padding */
+        font-size: 13px; /* Adjust font size */
+    }
+
+    .layer h3 {
+        font-size: 22px; /* Adjust heading size */
+    }
+
+    .layer a {
+        font-size: 16px; /* Adjust link size */
+        line-height: 55px; /* Adjust line height */
+        width: 55px; /* Adjust width */
+    }
+
+    .btn {
+        padding: 12px 40px; /* Adjust button padding */
+    }
+}
+@media only screen and (max-width:768px){
    .headertext{
     margin-top: 100%;
     font-size: 16px;
@@ -408,53 +472,57 @@ nav .fa-solid{
     .Copyright{
         font-size: 14px;
     }
-    .layer h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
+    /* .layer li{
+        font-size: 11px;
     }
+    .layer h3 {
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+    .layer a {
+        width: 30px;
+        height: 30px;
+    } */
+    /* .layer a i{
+        font-size: 10px;
+    } */
     .logo{
         height: 50px;
         position: absolute;
         top: 20px;
         right: 25px;
     }
+    /* .work-list{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+    } */
+    .work-list {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-gap: 20px; /* Reduce gap */
+    }
 
-}
-/* For medium screens (tablets) */
-@media only screen and (max-width: 768px) {
-    .headertext {
-        font-size: 20px;
+    .work {
+        margin-bottom: 20px; /* Reduce margin */
     }
-    .headertext h1 {
-        font-size: 40px;
-    }
-    .about-col-1 img {
-        width: 80%;
-    }
-    .services-list div {
-        padding: 20px;
-    }
-    .services-list div i {
-        font-size: 30px;
-    }
-    .services-list div h2 {
-        font-size: 24px;
-    }
+
     .layer {
-        font-size: 12px;
+        padding: 0 20px; /* Adjust padding */
+        font-size: 12px; /* Adjust font size */
     }
+
     .layer h3 {
-        font-size: 20px;
+        font-size: 20px; /* Adjust heading size */
     }
+
     .layer a {
-        font-size: 16px;
+        font-size: 16px; /* Adjust link size */
+        line-height: 50px; /* Adjust line height */
+        width: 50px; /* Adjust width */
     }
-    .contact-left, .contact-right {
-        flex-basis: 100%;
+
+    .btn {
+        padding: 10px 30px; /* Adjust button padding */
     }
-    .layer h3 {
-        font-size: 18px;
-        margin-bottom: 15px;
-        padding-top: 20px;
-    }
+}
+
 }
