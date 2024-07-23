@@ -351,7 +351,7 @@ nav .fa-solid{
     display: none;
 }
 /* For medium screens (tablets) */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1324px) {
     .headertext {
         font-size: 20px;
     }
@@ -402,7 +402,7 @@ nav .fa-solid{
     }
 
     .layer h3 {
-        font-size: 22px; /* Adjust heading size */
+        font-size: 20px; /* Adjust heading size */
     }
 
     .layer a {
@@ -507,11 +507,11 @@ nav .fa-solid{
 
     .layer {
         padding: 0 20px; /* Adjust padding */
-        font-size: 12px; /* Adjust font size */
+        font-size: 14px; /* Adjust font size */
     }
 
     .layer h3 {
-        font-size: 20px; /* Adjust heading size */
+        font-size: 24px; /* Adjust heading size */
     }
 
     .layer a {
